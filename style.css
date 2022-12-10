@@ -1,0 +1,174 @@
+body,
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url("https://c1.wallpaperflare.com/preview/190/67/674/affection-afterglow-backlit-blur.jpg");
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    color: rgb(129, 124, 124);
+    text-align: center;
+}
+
+.love,
+.yes,
+.no {
+    padding-top: 15rem;
+}
+
+.love span {
+    color: rgba(221, 15, 59, 0.966);
+    font-weight: bold;
+    font-size: 5rem;
+    box-shadow: rgb(226, 204, 208);
+}
+
+h2 {
+    color: rgba(221, 15, 59, 0.966);
+    font-weight: bold;
+    font-size: 5rem;
+    box-shadow: rgb(226, 204, 208);
+    animation: lastwish .5s linear infinite;
+
+}
+
+h1 {
+    margin: 2rem 0;
+    box-shadow: rgb(rgba(197, 114, 114, 0.774));
+    font-family: cursive
+}
+
+.link {
+    margin: 2rem;
+}
+
+.love a {
+    text-decoration: none;
+}
+
+.love a:hover {
+    font-size: 3rem;
+    background-color: rgb(26, 27, 27);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 2rem;
+
+}
+
+#no {
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 1.5rem;
+
+}
+
+#yes {
+    color: green;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 1.5rem;
+}
+
+.tso {
+    width: 70px;
+    border-radius: 50px;
+    height: 70px;
+}
+
+img {
+    width: 30px;
+    border-radius: 20px;
+    height: 40px;
+    animation: heart 1s linear infinite;
+    align-items: center;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(.7);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.7);
+    }
+}
+
+@keyframes lastwish {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(.7);
+    }
+
+    100% {
+        transform: scale(.7);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .love span,
+    h1 {
+        color: rgba(221, 15, 59, 0.966);
+        font-weight: bold;
+        font-size: 1.6rem;
+        box-shadow: rgb(rgba(197, 114, 114, 0.774));
+        font-family: cursive;
+    }
+
+    h2 {
+        color: rgba(224, 70, 70, 0.966);
+        font-weight: bold;
+        font-size: 1.7rem;
+        font-family: cursive;
+        box-shadow: rgb(124, 7, 29);
+    }
+
+    img {
+        width: 20px;
+        border-radius: 20px;
+        height: 20px;
+    }
+
+    img .tso {
+        width: 50px;
+        border-radius: 20px;
+        height: 50px;
+    }
+}
